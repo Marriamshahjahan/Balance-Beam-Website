@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balance Beam - Home</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: grey;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusted alignment */
+    align-items: center;
+    height: 80vh; /* Adjusted height */
+}
+
+.login-container,
+.signin-container {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 40%;
+    text-align: center;
+}
+
+.container h1 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
+/* Change the color of the logo */
+.logo-text {
+    color: white;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="your-logo.png" alt="Balance Beam">
+        <!-- Replace 'your-logo.png' with your actual logo file -->
+    </div>
+    <div class="container">
+        <div class="login-container">   
+            <h1>Don't have an account?</h1>   
+            <p>Sign in now to explore a world of opportunities!</p>
+            <button class="login-button" onclick="window.location.href='signin.html'">Sign In</button>
+        </div>
+        <div class="signin-container"> 
+            <h1>Login</h1>
+            <p>Login as:</p>
+            <button class="login-button" onclick="window.location.href='loginadmin.html'">Admin</button>
+            <button class="login-button" onclick="window.location.href='loginuser.html'">User</button>
+        </div>
+    </div>
+</body>
+</html>
