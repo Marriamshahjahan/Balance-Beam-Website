@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Beam</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-image: url('hero-background.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      background-position: center, center;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #fff;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #333;
+      padding: 0 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .about-us {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+
+    .about-us h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-us p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .about-us img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+
+    .our-services {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+
+    .our-services h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Balance Beam: A Complete Place for Individual Well-being</h1>
+  <p>Discover the ultimate destination for personal growth and fitness journey</p>
+</div>
+
+<div class="navbar">
+  <div class="container">
+    <div class="navbar-brand">Balance Beam</div>
+    <nav class="navbar-nav">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Services</a>
+      <a href="#" class="nav-link">Contact</a>
+      <a href="login.html" class="nav-link">Login</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <div class="about-us">
+    <h2>About Us</h2>
+    <p>At Balance Beam, we strive to provide a comprehensive platform for your personal development and well-being. Our mission is to empower individuals to achieve their goals, whether it's pursuing a career, improving mental health, or enhancing physical fitness. We offer a range of resources, including informative articles, expert advice, and personalized tools, to support you on your journey to a balanced and fulfilling life.</p>
+    <img src="about-us-image.jpg" alt="About Us" />
+  </div>
+
+  <div class="our-services">
+    <h2>Our Services</h2>
+    <div class="card">
+      <h3>Personalized Training Programs</h3>
+      <p>Get access to customized workout plans tailored to your fitness goals and preferences.</p>
+    </div>
+    <div class="card">
+      <h3>Career Development Resources</h3>
+      <p>Explore a variety of career resources, including resume building, interview tips, and skill development courses.</p>
+    </div>
+    <div class="card">
+      <h3>Mental Health Support</h3>
+      <p>Find guidance and support for managing stress, anxiety, and other mental health challenges.</p>
+    </div>
+    <div class="card">
+      <h3>Nutritional Guidance</h3>
+      <p>Learn about healthy eating habits and receive personalized nutrition plans from certified experts.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
