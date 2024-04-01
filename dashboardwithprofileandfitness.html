@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        /* Your CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .dashboard {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            padding: 20px 0;
+            background-color: #614caf;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px 0;
+        }
+        .option {
+            padding: 20px;
+            background-color: #4c59af;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .option:hover {
+            background-color: #4e45a0;
+        }
+        .option img {
+            width: 100px; /* Adjust the width as desired */
+            height: 100px; /* Adjust the height as desired */
+            margin-bottom: 10px;
+        }
+        /* Profile page styles */
+        .profile-container {
+            max-width: 600px;
+            margin: 0 auto;
+            display: none; /* Hide profile container by default */
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            margin-bottom: 20px;
+        }
+        /* Fitness page styles */
+        .fitness-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: none; /* Hide fitness container by default */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #333;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="title">User Dashboard</div>
+        <div class="row">
+            <div class="option" id="profileOption">
+                <img src="C:\Users\seethalekshmi.b.s\Downloads\profile1.png" alt="My Profile">
+                My Profile
+            </div>
+        </div>
+        <div class="row">
+            <div class="option" id="idpOption">
+                <img src="idp.png" alt="IDP">
+                IDP
+            </div>
+            <div class="option" id="fitnessOption"> <!-- Added id attribute to the Fitness option -->
+                <img src="fitness.png" alt="Fitness">
+                Fitness
+            </div>
+        </div>
+        <div class="row">
+            <div class="option">
+                <img src="C:\Users\seethalekshmi.b.s\Downloads\png-transparent-web-design-enterprise-mobile-application-business-productivity-software-wResource.png" alt="Resources">
+                Resources
+            </div>
+            <div class="option">
+                <img src="contact.png" alt="Contact Us">
+                Contact Us
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <img src="default-profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="profile-info">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="JohnDoe" readonly>
+        </div>
+        <div class="profile-info">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="profile-info">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="johndoe@example.com" readonly>
+        </div>
+        <div class="profile-info">
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality">
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+    </div>
+
+    <div class="fitness-container">
+        <header>
+            <h1>Fitness Page</h1>
+        </header>
+        <nav>
+            <a href="#physical_health">Physical Health</a> | 
+            <a href="#mental_health">Mental Health</a>
+        </nav>
+        <section id="physical_health">
+            <h2>Physical Health</h2>
+            <section id="workout_log">
+                <h3>Workout Log</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Exercise Type</th>
+                            <th>Duration (minutes)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024-03-20</td>
+                            <td>Running</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>2024-03-20</td>
+                            <td>Push-ups</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>2024-03-21</td>
+                            <td>Cycling</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>2024-03-21</td>
+                            <td>Squats</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>2024-03-22</td>
+                            <td>Swimming</td>
+                            <td>60</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+            <section id="exercise_library">
+                <h3>Exercise Library</h3>
+                <p>Below are some resources for workout forms and demonstration videos:</p>
+                <ul>
+                    <li><a href="workout_form.pdf" target="_blank">Workout Form</a> - Download and fill out this form to track your workouts.</li>
+                    <li><a href="https://www.youtube.com/watch?v=your_video_id" target="_blank">Running Demonstration</a> - Watch a demonstration of proper running technique.</li>
+                    <li><a href="https://www.youtube.com/watch?v=your_video_id" target="_blank">Push-ups Tutorial</a> - Learn how to do push-ups correctly with this tutorial video.</li>
+                    <li><a href="https://www.youtube.com/watch?v=your_video_id" target="_blank">Cycling Technique</a> - Improve your cycling technique by watching this instructional video.</li>
+                    <!-- Add more resources as needed -->
+                </ul>
+            </section>
+            <section id="calorie_calculator">
+                <h3>Calorie Calculator</h3>
+                <form id="calorie_form">
+                    <label for="exercise">Select Exercise:</label>
+                    <select id="exercise" name="exercise">
+                        <option value="running">Running</option>
+                        <option value="push-ups">Push-ups</option>
+                        <option value="cycling">Cycling</option>
+                        <option value="squats">Squats</option>
+                        <option value="swimming">Swimming</option>
+                        <!-- Add more exercise options as needed -->
+                    </select><br><br>
+                    <label for="duration">Duration (minutes):</label>
+                    <input type="number" id="duration" name="duration" min="1"><br><br>
+                    <input type="submit" value="Calculate">
+                </form>
+                <div id="calorie_result">
+                    <!-- Calorie calculation result will be displayed here -->
+                </div>
+            </section>
+        </section>
+        <section id="mental_health">
+            <h2>Mental Health</h2>
+            <section id="mood_tracker">
+                <h3>Mood Tracker</h3>
+                <!-- Add your mood tracker content here -->
+                <p>How do you feel today?</p>
+                <label><input type="radio" name="mood" value="Happy"> Happy</label>
+                <label><input type="radio" name="mood" value="Sad"> Sad</label>
+                <label><input type="radio" name="mood" value="Normal"> Normal</label>
+            </section>
+            <section id="stress_management">
+                <h3>Stress Management Techniques</h3>
+                <!-- Add stress management techniques content here -->
+                <p>Some stress management techniques you can try:</p>
+                <ul>
+                    <li>Deep breathing exercises</li>
+                    <li>Mindfulness meditation</li>
+                    <li>Progressive muscle relaxation</li>
+                    <li>Journaling</li>
+                    <li>Spending time in nature</li>
+                    <li>Engaging in hobbies</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+
+    <script>
+        // Add event listeners for dashboard options
+        document.getElementById("profileOption").addEventListener("click", function() {
+            // Hide dashboard, show profile page
+            document.querySelector(".dashboard").style.display = "none";
+            document.querySelector(".profile-container").style.display = "block";
+        });
+
+        document.getElementById("idpOption").addEventListener("click", function() {
+            // Hide dashboard, show IDP page
+            document.querySelector(".dashboard").style.display = "none";
+            document.querySelector(".idp-container").style.display = "block";
+        });
+
+        document.getElementById("fitnessOption").addEventListener("click", function() {
+            // Hide dashboard, show Fitness page
+            document.querySelector(".dashboard").style.display = "none";
+            document.querySelector(".fitness-container").style.display = "block";
+        });
+
+        // Add calorie calculation functionality
+        document.getElementById('calorie_form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get exercise and duration values
+            var exercise = document.getElementById('exercise').value;
+            var duration = parseInt(document.getElementById('duration').value);
+
+            // Calorie calculation (approximate values)
+            var calorieBurnRate = {
+                'running': 10, // Calories burned per minute for running
+                'push-ups': 5, // Calories burned per minute for push-ups
+                'cycling': 8, // Calories burned per minute for cycling
+                'squats': 6, // Calories burned per minute for squats
+                'swimming': 12 // Calories burned per minute for swimming
+                // Add more exercises with corresponding calorie burn rates as needed
+            };
+
+            if (calorieBurnRate.hasOwnProperty(exercise)) {
+                var caloriesBurned = calorieBurnRate[exercise] * duration;
+                document.getElementById('calorie_result').innerHTML = 'Calories burned: ' + caloriesBurned;
+            } else {
+                document.getElementById('calorie_result').innerHTML = 'Please select a valid exercise.';
+            }
+        });
+    </script>
+</body>
+</html>
