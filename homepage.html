@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Beam</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('website-background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-image: url('hero-background.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      background-position: center, center;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #fff;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #333;
+      padding: 0 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .about-us,
+    .our-services,
+    .achievements {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+      max-width: 1100px; /* Added */
+      margin-left: auto; /* Added */
+      margin-right: auto; /* Added */
+    }
+
+    .about-us h2,
+    .our-services h2,
+    .achievements h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about-us p,
+    .our-services p,
+    .achievements p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .about-us img {
+      max-width: 250px; 
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+
+    .our-services img {
+      max-width: 300px; 
+      height: auto;
+    }
+
+    .grey-bar p {
+      font-size: 1.1rem; 
+      line-height: 1.6; 
+    }
+
+    .achievements h2 {
+      text-align: center;
+    }
+
+    .achievements p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Balance Beam: A Complete Place for Individual Well-being</h1>
+  <p>Discover the ultimate destination for personal growth and fitness journey</p>
+</div>
+
+<div class="navbar">
+  <div class="container">
+    <div class="navbar-brand">Balance Beam</div>
+    <nav class="navbar-nav">
+      <a href="#about" class="nav-link">About Us</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#contact" class="nav-link">Contact Us</a>
+      <a href="login.html" class="nav-link">Login</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <div class="achievements">
+    <h2>Our Achievements</h2>
+    <p>At Balance Beam, our achievements speak volumes about our commitment to your growth and well-being. We've empowered countless individuals to reach their full potential, earning trust as a premier platform for personal and professional development. Our vibrant community fosters connections and inspiration, while our curated content ensures excellence in providing practical guidance for holistic well-being. With measurable impact and strategic collaborations, we continue to expand our reach and enrich our offerings to serve you better.</p>
+  </div>
+
+  <div id="about" class="about-us">
+    <h2>About Us</h2>
+    <p>At Balance Beam, we strive to provide a comprehensive platform for your personal development and well-being. Our mission is to empower individuals to achieve their goals, whether it's pursuing a career, improving mental health, or enhancing physical fitness. We offer a range of resources, including informative articles, expert advice, to address all aspects of your well-being.</p>
+    <img src="about-us-image.jpg" alt="About Us" />
+  </div>
+
+  <div class="grey-bar">
+    <p>We believe in fostering a supportive community where individuals can thrive and reach their full potential. Join us on this journey towards a balanced and fulfilling life.</p>
+  </div>
+
+  <a href="#services" class="btn">Discover Our Services</a>
+</div>
+
+<div id="services" class="our-services">
+  <h2>Our Services</h2>
+  <div class="card">
+    <h3>Personalized Training Programs</h3>
+    <p>Get access to customized workout plans tailored to your fitness goals and preferences.</p>
+    <img src="training-concept-image.jpg" alt="Fitness" />
+  </div>
+  <div class="card">
+    <h3>Career Development Resources</h3>
+    <p>Explore a variety of career resources, including resume building, interview tips, and skill development courses.</p>
+    <img src="8-IT-Professional-Career-Development-Tips-in-a-Managed-Services-World_blog.jpg" alt="Career Development" />
+  </div>
+  <div class="card">
+    <h3>Mental Health Support</h3>
+    <p>Find guidance and support for managing stress, anxiety, and other mental health challenges.</p>
+    <img src="mental-health-is-universal-human-right-need-to-destigmatise-mental-health-issues-who.jpg" alt="Mental Health" />
+  </div>
+  <div class="card">
+    <h3>Nutritional Guidance</h3>
+    <p>Learn about healthy eating habits and receive personalized nutrition plans from certified experts.</p>
+    <img src="Nutrients.jpg" alt="Nutritional Guidance" />
+  </div>
+</div>
+
+<div id="contact" class="our-services">
+  <h2>Contact Us</h2>
+  <div class="card">
+    <h3>Keerthana B Anil</h3>
+    <p>BTech CSE<br>
+    Phone: +91 9778781779<br>
+    Address: College of Engineering, Karunagapally, managed by IHRD</p>
+  </div>
+  <div class="card">
+    <h3>Marriam Shahjahan Pillai</h3>
+    <p>BTech CSE<br>
+    Phone: +91 9037160634<br>
+    Address: College of Engineering, Karunagapally, managed by IHRD</p>
+  </div>
+  <div class="card">
+    <h3>R S Soumya Chandran</h3>
+    <p>BTech CSE<br>
+    Phone: +91 9495790448<br>
+    Address: College of Engineering, Karunagapally, managed by IHRD</p>
+  </div>
+  <div class="card">
+    <h3>Suma M</h3>
+    <p>BTech CSE<br>
+    Phone: +91 9778062381<br>
+    Address: College of Engineering, Karunagapally, managed by IHRD</p>
+  </div>
+</div>
+
+<script>
+  // Smooth scrolling effect for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
