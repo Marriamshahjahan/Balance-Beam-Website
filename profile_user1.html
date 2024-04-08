@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balance Beam - Dashboard</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('website-background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-image: url('hero-background.jpg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      background-position: center, center;
+      background-size: cover, cover;
+      background-repeat: no-repeat, no-repeat;
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #fff;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #333;
+      padding: 0 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .nav-link:hover {
+      color: #007bff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .profile {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+
+    .profile h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .profile p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .profile img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+
+    .dashboard-options {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .dashboard-option {
+      width: calc(33.33% - 20px);
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .dashboard-option:hover {
+      transform: translateY(-5px);
+    }
+
+    .dashboard-option h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .dashboard-option p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .logout-btn {
+      background-color: #ff3d00;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .logout-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Welcome to Your Dashboard</h1>
+  <p>Discover the ultimate destination for personal growth and fitness journey</p>
+</div>
+
+<div class="navbar">
+  <div class="container">
+    <div class="navbar-brand">Balance Beam</div>
+    <nav class="navbar-nav">
+      <a href="#profile" class="nav-link" onclick="redirectTo('profile')">My Profile</a>
+      <a href="#idp" class="nav-link" onclick="redirectTo('idp')">Individual Development</a>
+      <a href="#fitness" class="nav-link" onclick="redirectTo('fitness')">Fitness</a>
+      <a href="#resources" class="nav-link" onclick="redirectTo('resources')">Resources</a>
+      <button class="logout-btn nav-link">Logout</button>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <div class="profile">
+    <h2>My Profile</h2>
+    <p>Abraham</p>
+    <!-- Example profile image -->
+    <img src="gray-user-profile-icon-png-fP8Q1P.png" alt="Profile Image" />
+  </div>
+
+  <div class="dashboard-options">
+    <div id="idp" class="dashboard-option" onclick="redirectTo('idp')">
+      <h3>Individual Development</h3>
+      <p>Plan your personal and professional growth.</p>
+    </div>
+    <div id="fitness" class="dashboard-option" onclick="redirectTo('fitness')">
+      <h3>Fitness</h3>
+      <p>Stay fit and track your workouts.</p>
+    </div>
+    <div id="resources" class="dashboard-option" onclick="redirectTo('resources')">
+      <h3>Resources</h3>
+      <p>Access helpful resources for your well-being.</p>
+    </div>
+  </div>
+</div>
