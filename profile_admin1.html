@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .logout-btn {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .logout-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+    </div>
+
+    <div class="container">
+        <div class="welcome">
+            <p>Welcome, Admin!</p>
+        </div>
+        
+        <div class="actions">
+            <h2>Actions</h2>
+            <ul>
+                <li><a href="#">View Users</a></li>
+                <li><a href="#">Manage Posts</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+
+        <form action="logout.php" method="post">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
