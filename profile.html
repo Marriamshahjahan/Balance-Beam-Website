@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        /* Basic styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('21.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #fff;
+        }
+        .profile-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .profile-info label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .profile-info input[type="text"],
+        .profile-info input[type="date"],
+        .profile-info input[type="email"],
+        .profile-info input[type="number"],
+        .profile-info select,
+        .profile-info textarea {
+            width: calc(100% - 10px);
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+        .profile-info select {
+            width: 100%;
+        }
+        .profile-info input[type="text"]:read-only,
+        .profile-info input[type="email"]:read-only {
+            background-color: transparent;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <img src="gray-user-profile-icon-png-fP8Q1P.png" alt="Profile Picture" class="profile-picture">
+        <div class="profile-info">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="profile-info">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="profile-info">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="profile-info">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" placeholder="Enter your height">
+        </div>
+        <div class="profile-info">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" placeholder="Enter your weight">
+        </div>
+        <div class="profile-info">
+            <label for="body-type">Body Type:</label>
+            <select id="body-type" name="body-type">
+                <option value="Ectomorph">Ectomorph</option>
+                <option value="Mesomorph">Mesomorph</option>
+                <option value="Endomorph">Endomorph</option>
+            </select>
+        </div>
+        <div class="profile-info">
+            <label for="blood-pressure">Blood Pressure:</label>
+            <input type="text" id="blood-pressure" name="blood-pressure" placeholder="Enter your blood pressure">
+        </div>
+        <div class="profile-info">
+            <label for="blood-sugar">Blood Sugar:</label>
+            <input type="text" id="blood-sugar" name="blood-sugar" placeholder="Enter your blood sugar level">
+        </div>
+        <div class="profile-info">
+            <label for="other-info">Other Personal and Physical Information:</label>
+            <textarea id="other-info" name="other-info" placeholder="Enter any other relevant information"></textarea>
+        </div>
+        <div class="profile-info">
+            <label for="mental-info">Mental Information:</label>
+            <textarea id="mental-info" name="mental-info" placeholder="Enter any relevant mental information"></textarea>
+        </div>
+    </div>
+</body>
+</html>
